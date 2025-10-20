@@ -1,0 +1,45 @@
+body{
+    background-image: url(leaf_fall_2.gif);
+    background-size: cover;
+}
+
+#button{
+    background-color: rgb(52, 52, 187);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#button:hover{
+    background-color: rgb(23, 23, 64);
+}
+
+h1{
+    color: rgb(52, 52, 187);
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    text-align: center; /* Centered text */
+    font-size: 50px; /* Big font size */
+    font-weight: bold;
+    position: relative; /* Fixed position - sit on top of the page */
+    top: 0;
+    width: 100%; /* Full width */
+    transition: 0.4s; /* Add a transition effect (when scrolling - and font size is decreased) */
+}
+
+#overlay{ 
+    animation: grain 8s steps(10) infinite;
+    background-image: url(leaf_fall_2.gif);
+    background-size: cover; 
+    content: "";
+    height: 200%;
+    left: -50%;
+    opacity:.5;
+    position: fixed;
+    top: -100%;
+    width: 200%;
+    pointer-events:none
+}
